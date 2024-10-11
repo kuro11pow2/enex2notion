@@ -1,5 +1,8 @@
 import argparse
 from pathlib import Path
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
 from enex2notion.version import __version__
 
@@ -24,6 +27,8 @@ def parse_args(argv):
             "metavar": "FILE/DIR",
         },
         "--token": {
+            "type": str,
+            "default": os.getenv('TOKEN'), 
             "help": (
                 "Notion token, stored in token_v2 cookie for notion.so"
                 " [NEEDED FOR UPLOAD]"
