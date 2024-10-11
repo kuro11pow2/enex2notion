@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "start",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/enex2notion/__main__.py",
+      "console": "integratedTerminal",
+      "args": ["--verbose", "--done-file", "./upload/done.txt", "./upload"],
+      "justMyCode": false
+    }
+  ]
+}
