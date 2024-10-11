@@ -77,8 +77,8 @@ class EnexUploader(object):
 
         note_blocks = self._parse_note(note)
         if not note_blocks:
-            logger.debug(f"Skipping note '{note.title}' (no blocks)")
-            return
+            logger.info(f"Processing note '{note.title}' (no blocks but proceeding)")
+            # return
 
         if self.notebook_root is not None:
             logger.info(
