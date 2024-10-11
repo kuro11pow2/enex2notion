@@ -11,6 +11,12 @@ Notion's native Evernote importer doesn't do it for me, so I decided to write my
 
 You can either use Evernote native export or try out my other tool, [evernote-backup](https://github.com/vzhd1701/evernote-backup), to export `*.enex` files from Evernote.
 
+### 변경점
+
+프로젝트 루트에 `.env` 파일 생성해서 `TOKEN={니 토큰}` 입력
+
+프로젝트 루트에 `upload/` 폴더 생성해서 업로드할 파일 배치
+
 ### What is preserved
 
 - Embedded files and images are uploaded to Notion
